@@ -40,7 +40,11 @@
 					<div class="top-line__leftside-icons">
 						<a class="icon fa fa-bars" href="javascript:void(0);"></a>
 						<form class="form-search">
-							<button class="icon fa fa-search" type="submit"></button>
+							<div class="form-search__bar bar">
+								<input type="text" class="bar__input" title="">
+								<button class="bar__submit fa fa-search" type="submit"></button>
+							</div>
+							<button class="icon fa fa-search" onclick=" return false"></button>
 							<input type="search" class="form-search__input" title="search">
 						</form>
 					</div>
@@ -52,6 +56,7 @@
 					<div class="top-line__rightside-icons">
 						<a class="icon fa fa-share-alt" href="javascript:void(0);"></a>
 						<a class="icon fa fa-briefcase" href="javascript:void(0);"></a>
+						<span>3</span>
 					</div>
 				</div>
 
@@ -88,6 +93,136 @@
 							</a>
 						</li>
 					</ul>
+
+					<div class="mobile-nav clearfix">
+						<div class="mob-container-left clearfix">
+							<div class="mobile">
+								<h4 class="mobile__title">T-shirts & Blouses</h4>
+								<ul>
+									<li>
+										<a href="javascript:void(0);">
+											Blouses
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">
+											T-Shirt
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">
+											Shirts
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="mobile">
+								<h4 class="mobile__title">Warm Clothes</h4>
+								<ul>
+									<li>
+										<a href="javascript:void(0);">
+											Cardigans
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">
+											Sweaters
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">
+											Sweatshirts
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="mobile ">
+								<h4 class="mobile__title">Outerwears</h4>
+								<ul>
+									<li>
+										<a href="javascript:void(0);">
+											Coats
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">
+											Hoddies_&_Pullowers
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">
+											Jackets
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="mob-container-center clearfix">
+							<div class="mobile-img clearfix">
+								<img src="img/photo/01.jpg" alt="alt">
+
+								<h5 class="mobile-img__title">Happy intarsia crewneck
+									sweater</h5>
+								<p class="mobile-img__price">$190</p>
+								<p class="mobile-img__price mobile-img__price--old">$250</p>
+
+							</div>
+							<div class="mobile-img clearfix">
+								<img src="img/photo/02.jpg" alt="alt">
+									<h5 class="mobile-img__title">Happy intarsia crewneck
+										sweater</h5>
+									<p class="mobile-img__price">$190</p>
+									<p class="mobile-img__price mobile-img__price--old">$250</p>
+
+							</div>
+							<div class="mobile-img clearfix">
+								<img src="img/photo/03.jpg" alt="alt">
+
+									<h5 class="mobile-img__title">Happy intarsia crewneck
+										sweater</h5>
+									<p class="mobile-img__price">$190</p>
+									<p class="mobile-img__price mobile-img__price--old">$250</p>
+
+							</div>
+						</div>
+
+						<div class="mob-container-right clearfix">
+							<div class="mobile-logo">
+								<ul>
+									<li>
+										<a href="javascript:void(0);">
+											<img src="img/dummy.png" alt="alt">
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">
+											<img src="img/dummy.png" alt="alt">
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">
+											<img src="img/dummy.png" alt="alt">
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">
+											<img src="img/dummy.png" alt="alt">
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">
+											<img src="img/dummy.png" alt="alt">
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
 				</nav>
 
 			</div>
@@ -1260,7 +1395,7 @@
 		</a>
 	</div>
 
-	<section class="banner">
+	<section class="banner clearfix">
 		<div class="banner__left">
 			<img class="img-responsive" src="img/Img.jpg" alt="">
 		</div>

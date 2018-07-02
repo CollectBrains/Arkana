@@ -1,14 +1,23 @@
 $(function() {
 	
-	$(".fa-bars").on('click', function () {
-		if ($(".mobile-nav").hasClass('mob')){
+	// $(".fa-bars").on('click', function () {
+	// 	if ($(".mobile-nav").hasClass('mob')){
+	// 		$(".mobile-nav").css('left', '-2000px');
+	// 		$(".mobile-nav").removeClass('mob');
+	// 	}else {
+	// 		$(".mobile-nav").addClass('mob');
+	// 		$(".mobile-nav").css('left', '0px');
+	// 	}
+	// });
+
+	$(".fa-bars").on('click', function(){
+		var flag = false;
+		if (flag) {
 			$(".mobile-nav").css('left', '-2000px');
-			$(".mobile-nav").removeClass('mob');
-		}else {
-			$(".mobile-nav").addClass('mob');
+			flag = true;
+		} else {
 			$(".mobile-nav").css('left', '0px');
 		}
-
 	});
 	
 	$(".form-search").on('click', function () {

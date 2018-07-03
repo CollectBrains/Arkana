@@ -101,6 +101,10 @@ body
 			max-width: 190px
 
 .top-line__rightside-icons
+	.icon
+		&:hover, &:focus
+			text-decoration: none
+			color: $text-dark
 	.fa-briefcase
 		position: relative
 		display: inline-block
@@ -117,6 +121,32 @@ body
 		font-size: 9px
 		vertical-align: middle
 		text-align: center
+
+.share
+	position: absolute
+	display: none
+	top: 100%
+	right: 100%
+	min-width: 160px
+	background-color: #fff
+	height: 46px
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+	li
+		display: inline-block
+		a
+			display: block
+			.fa
+				line-height: 46px
+				padding: 0 10px
+				color: $text-gray
+				transition: color .2s
+				&:hover
+					color: $text-dark
+
+
 
 .form-search
 	display: inline-block
@@ -242,8 +272,6 @@ body
 		a
 			display: block
 
-
-
 .slider
 	position: absolute
 	top: 0
@@ -282,7 +310,6 @@ body
 		.fa
 			margin-left: -5px
 
-
 .slide
 	width: 100%
 	height: 100vh
@@ -311,7 +338,8 @@ body
 .button-white,
 .button-small,
 .button-card,
-.button-border
+.button-border,
+.button-checkout
 	padding: 22px 55px
 	display: inline-block
 	background-color: #000
@@ -348,6 +376,10 @@ body
 	color: $text-dark
 	&:hover
 		background-color: $text-dark
+
+.button-checkout
+	padding: 12px 26px
+	border-radius: 30px
 
 // Advantages
 //=================================
@@ -802,31 +834,112 @@ body
 				text-decoration: none
 				color: $text-gray
 
+// Basket
+//============================
+
+.main-basket
+	position: fixed
+	background-color: #fff
+	top: 0
+	right: -2000px
+	padding: 30px
+	z-index: 100
+	max-height: 100vh
+	text-align: center
+	overflow-y: auto
+	transition: all .4s
+	&__title
+		position: relative
+		text-align: left
+		text-transform: uppercase
+		+msb-font
+		font-size: 22px
+		color: #000
+		margin-bottom: 70px
+	&__close
+		position: absolute
+		top: 35px
+		right: 15px
+		width: 25px
+		height: 25px
+		font-size: 18px
+		color: $text-gray
+		cursor: pointer
 
 
+.basket
+	position: relative
+	padding-bottom: 20px
+	margin-top: 20px
+	border-bottom: 1px solid rgba($text-gray, .3)
+	max-height: 120px
+	text-align: left
+	+mr-font
+	min-width: 270px
+	&::before
+		content: 'x'
+		position: absolute
+		top: 0
+		right: 0
+		font-size: 16px
+		color: #ffffff
+		cursor: pointer
+		width: 20px
+		height: 20px
+		border-radius: 100%
+		background-color: #c2c4cc
+		line-height: 1
+		text-align: center
+		vertical-align: top
+	img
+		float: left
+	&__title
+		font-size: 12px
+		+mb-font
+		margin-bottom: 10px
+		padding-right: 20%
+	&__size
+		font-size: 11px
+		color: $text-gray
+		span
+			color: $text-dark
+	&__color
+		font-size: 11px
+		color: $text-gray
+		span
+			color: $text-dark
+	&__price
+		+msb-font
+		line-height: 1
+		font-size: 18px
+		color: $text-dark
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.total
+	margin-top: 20px
+	margin-bottom: 20px
+	text-align: left
+	&__row
+		&:nth-last-of-type(2)
+			margin-bottom: 20px
+	&__text
+		+msb-font
+		font-size: 13px
+		color: $text-dark
+	&__price
+		font-size: 14px
+		+msb-font
+		color: $text-dark
+		float: right
+		&--big
+			font-size: 18px
+	&__last
+		padding-top: 20px
+		border-top: 1px solid rgba($text-gray, .5)
+	&__title
+		text-transform: uppercase
+		font-size: 13px
+		+msb-font
+		color: $text-dark
 
 
 @import "media" // Всегда в конце

@@ -13,14 +13,94 @@
 	/**/
 
 
+@media only screen and (max-width : 860px)
+	.slider
+		&__next, &__prev
+			display: none
+
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	.mob-container-right
+		display: none
+	.mob-container-center
+		width: 60%
 
+	.main-nav__list
+		display: none
+
+	.product__img-wrap
+		> .button-card:first-child
+			margin-bottom: 10px
+
+	.product
+		.radio
+			padding: 0 0 0 30px
+
+
+
+
+@media only screen and (max-width : 560px)
+	.mob-container-center
+		display: none
+	.mob-container-left
+		width: 100%
+
+	.the-title
+		font-size: 25px
+
+	.table__text
+		font-size: 11px
+
+	.banner__left
+		display: none
+
+	.banner
+		padding-bottom: 48%
+
+	.banner__right
+		float: none
+		width: 100%
+
+	.instagram
+		display: none
+
+	.foot__title
+		margin-bottom: 20px
+
+	.main-basket__close
+		right: 25px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width : 440px)
+	.mobile
+		padding-right: 0
+		float: none
+		text-align: center
+
+	.top-line__center-logo
+		display: block
+		width: 100%
+	.top-line__leftside-icons
+		display: block
+
+	.slide__title
+		font-size: 50px
+
+	.nav-tab-list__item
+		margin-right: 0
+		margin-bottom: 20px
+
+	.product__img-wrap
+		> .button-card:first-child
+			display: none
+
+	.descr__title
+		font-size: 12px
+
+	.banner
+		padding-bottom: 68%
 
 
 /* Custom, iPhone Retina */

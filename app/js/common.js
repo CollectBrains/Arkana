@@ -30,7 +30,7 @@ $(function() {
 	});
 
 
-	$(".form-search").on('click', function () {
+	$(".fa-search").on('click', function () {
 
 		if ($(".bar").is(":visible")){
 			$(".bar").css('width', '0px').delay(700).slideUp(100);
